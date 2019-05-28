@@ -6,10 +6,10 @@
       <Input search enter-button="搜索" placeholder="请输入桩号" v-model="keyWord" @on-search="search(keyWord)" />
       <Divider />
       <Table :columns="listColumns" :data="listData" style="margin-top:20px;">
-        <template slot-scope="{ row, index }" slot="action">
-            <Button type="info" @click="edit(row.Id)">修改</Button>
-            <Button type="error" @click="disable(row.Id)">作废</Button>
-        </template>
+        // <template slot-scope="{ row, index }" slot="action">
+        //     <Button type="info" @click="edit(row.Id)">修改</Button>
+        //     <Button type="error" @click="disable(row.Id)">作废</Button>
+        // </template>
       </Table>
       <div class="pageBox"><Page :total="totalCount" size="small" @on-change="handlePage" /></div>
 
